@@ -6,11 +6,13 @@ h1, h3, h4, h5, h6, p {
 /*botao de descer e subir a tela*/
 .arrow {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   
   i {
     color: $color-theme;
     transition: 0.5s;
+    font-size: 4rem;
+    
   
     &:hover {
       color: $color-theme-dark;
@@ -21,7 +23,7 @@ h1, h3, h4, h5, h6, p {
   }
 }
 
-
+/*todos os links*/
 .link {
   padding: 8px 24px;
   font-size: 24px;

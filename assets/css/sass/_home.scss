@@ -1,6 +1,7 @@
 /*---------------------------------navbar----------------------------*/
 #header {
   position: fixed;
+  z-index: 900;
 
   width: 100%;
   height: 7rem;
@@ -12,7 +13,7 @@
   background: $background-color-light;
 
   #logo {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: bold;
     color: $color-theme;
     letter-spacing: 0.1rem;
@@ -20,6 +21,7 @@
   
   a {
     color: $color-theme;
+    font-size: 2rem;
   }
 }
 
@@ -84,11 +86,24 @@
     margin-bottom: 1.5rem;
   }
 
-  // .button {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
+  .arrow-home {
+    display: flex;
+    justify-content: flex-end;
+    
+    i {
+      color: $color-theme;
+      transition: 0.5s;
+      font-size: 4rem;
+    
+      &:hover {
+        color: $color-theme-dark;
+        transform: scale(1.5); 
+        transition: 0.5s;
+        
+    
+      }
+    }
+  }
 
 }
  /* efeito maquina de escrever no h3 */

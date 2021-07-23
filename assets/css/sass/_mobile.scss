@@ -1,5 +1,9 @@
 /*-------Mobile--------*/
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
+   html {
+      overflow: auto;
+   }
+
   #menu {
      display: block;
      position: absolute;
@@ -69,31 +73,145 @@
   #nav.active #hamburguer::after {
      transform: rotate(-135deg);
      top: -0.7rem;
-  }
-}
+  } 
 
-/*-------Mobile--------*/
-@media (max-width: 760px) {
   #home .img-wrapper {
-     display: none;
-  }
-
-  #home .home-content {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 100%;
-     height: 50vh;
-  }
-
-  .text {
-     text-align: center;
-     font-size: 2rem;
-  }
-
-  .home-content {
-     display: block;
-     align-items: center;
-     justify-content: center;
-  }
+   display: none;
 }
+
+#home .home-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50vh;
+
+   .arrow-home {
+      display: none;
+   }
+}
+
+.text {
+   text-align: center;
+   font-size: 2rem;
+}
+
+ .home-content {
+   display: block;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ #about .about-container {
+   padding: 2rem 8rem 2rem;
+   
+ }
+
+ #about .about-container .about-content .about-text {
+    width: 100%;
+    padding-left: 2rem;
+    .arrow {
+       display: none;
+    }
+
+    h1 {
+       font-size: 3rem;
+    }
+
+    p {
+       font-size:1.3rem ;
+    }
+   
+ }
+
+ #about .about-container .about-content {
+   display: inline-block;
+
+   .about-link .links i {
+      font-size: 2rem;
+   }
+   
+}
+ 
+ #about .about-container .about-content .about-img img {
+   display: none;
+}
+
+#about .about-container .about-content .about-link .links {
+   flex-direction: row;
+}
+
+ 
+}
+
+@media (max-width: 768px) {
+   #home {
+      .home-content {
+         font-size: 2.5rem;
+
+         .button {
+            line-height: 4rem;
+            .botao-likedin {
+               width: 17rem;
+               font-size: 2rem;
+            }
+         }
+      }
+   }
+
+  
+}
+
+@media (max-width: 600px) {
+    
+ #about .about-container {
+   padding: 2rem 3rem 2rem;
+   
+ }
+   #about .about-container .about-content .about-text {
+      padding-left: 2rem;
+  
+      h1 {
+         font-size: 2.2rem;
+         margin-bottom: 2rem;
+      }
+  
+      p {
+         font-size:1.1rem ;
+      }
+     
+   }
+}
+
+@media (max-width: 460px) {
+   #home .home-content {
+      line-height: 6rem;
+   }
+
+   #about .about-container {
+      padding: 2rem 2rem 2rem;
+      
+    }
+   #about .about-container .about-content .about-text {
+      padding-left: 2rem;
+  
+      h1 {
+         font-size: 2.2rem;
+      }
+  
+      p {
+         font-size:1.1rem ;
+      }
+     
+   }
+}
+
+@media (max-width: 460px) {
+   #about .about-container {
+      padding: 2rem 0.5rem 2rem;
+      
+    }
+}
+  
+
+

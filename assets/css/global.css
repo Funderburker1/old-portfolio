@@ -8,15 +8,16 @@ h1, h3, h4, h5, h6, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .arrow i {
   color: #04D361;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 4rem;
 }
 
 .arrow i:hover {
@@ -27,6 +28,7 @@ h1, h3, h4, h5, h6, p {
   transition: 0.5s;
 }
 
+/*todos os links*/
 .link {
   padding: 8px 24px;
   font-size: 24px;
@@ -61,6 +63,7 @@ h1, h3, h4, h5, h6, p {
 /*---------------------------------navbar----------------------------*/
 #header {
   position: fixed;
+  z-index: 900;
   width: 100%;
   height: 7rem;
   padding: 1rem 5rem;
@@ -77,7 +80,7 @@ h1, h3, h4, h5, h6, p {
 }
 
 #header #logo {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: bold;
   color: #04D361;
   letter-spacing: 0.1rem;
@@ -85,6 +88,7 @@ h1, h3, h4, h5, h6, p {
 
 #header a {
   color: #04D361;
+  font-size: 2rem;
 }
 
 #menu {
@@ -162,6 +166,30 @@ h1, h3, h4, h5, h6, p {
   margin-bottom: 1.5rem;
 }
 
+#text .arrow-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#text .arrow-home i {
+  color: #04D361;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 4rem;
+}
+
+#text .arrow-home i:hover {
+  color: #067538;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 /* efeito maquina de escrever no h3 */
 #text h3::after {
   content: "|";
@@ -232,12 +260,115 @@ h1, h3, h4, h5, h6, p {
   height: 100vh;
 }
 
-#about .about-content {
-  padding: 15rem 8rem;
+#about .about-container {
+  padding: 15rem 8rem 2rem;
+  height: 100%;
+}
+
+#about .about-container .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-container .about-content .about-img {
+  width: 27%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 2rem;
+}
+
+#about .about-container .about-content .about-img img {
+  width: 20rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 18px #181818, 0 0 0 24px #04D361, 0 0 0 20px rgba(209, 148, 148, 0), 0 0 0 25px rgba(230, 179, 179, 0), 0 0 0 30px rgba(245, 214, 214, 0);
+          box-shadow: 0 0 0 18px #181818, 0 0 0 24px #04D361, 0 0 0 20px rgba(209, 148, 148, 0), 0 0 0 25px rgba(230, 179, 179, 0), 0 0 0 30px rgba(245, 214, 214, 0);
+}
+
+#about .about-container .about-content .about-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  padding-left: 4rem;
+  color: #fff;
+}
+
+#about .about-container .about-content .about-text h1 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  line-height: 5rem;
+}
+
+#about .about-container .about-content .about-text p {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+#about .about-container .about-content .about-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12.5%;
+  color: #fff;
+}
+
+#about .about-container .about-content .about-link a {
+  padding: 2rem;
+}
+
+#about .about-container .about-content .about-link a i {
+  font-size: 4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about .about-container .about-content .about-link a i:hover {
+  color: #04D361;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#about .about-container .about-content .about-link .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .about-container .about-content .about-link span {
+  border: 2px solid #04D361;
 }
 
 /*-------Mobile--------*/
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
+  html {
+    overflow: auto;
+  }
   #menu {
     display: block;
     position: absolute;
@@ -302,10 +433,6 @@ h1, h3, h4, h5, h6, p {
             transform: rotate(-135deg);
     top: -0.7rem;
   }
-}
-
-/*-------Mobile--------*/
-@media (max-width: 760px) {
   #home .img-wrapper {
     display: none;
   }
@@ -322,6 +449,9 @@ h1, h3, h4, h5, h6, p {
     width: 100%;
     height: 50vh;
   }
+  #home .home-content .arrow-home {
+    display: none;
+  }
   .text {
     text-align: center;
     font-size: 2rem;
@@ -334,6 +464,90 @@ h1, h3, h4, h5, h6, p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #about .about-container {
+    padding: 2rem 8rem 2rem;
+  }
+  #about .about-container .about-content .about-text {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  #about .about-container .about-content .about-text .arrow {
+    display: none;
+  }
+  #about .about-container .about-content .about-text h1 {
+    font-size: 3rem;
+  }
+  #about .about-container .about-content .about-text p {
+    font-size: 1.3rem;
+  }
+  #about .about-container .about-content {
+    display: inline-block;
+  }
+  #about .about-container .about-content .about-link .links i {
+    font-size: 2rem;
+  }
+  #about .about-container .about-content .about-img img {
+    display: none;
+  }
+  #about .about-container .about-content .about-link .links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  #home .home-content {
+    font-size: 2.5rem;
+  }
+  #home .home-content .button {
+    line-height: 4rem;
+  }
+  #home .home-content .button .botao-likedin {
+    width: 17rem;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #about .about-container {
+    padding: 2rem 3rem 2rem;
+  }
+  #about .about-container .about-content .about-text {
+    padding-left: 2rem;
+  }
+  #about .about-container .about-content .about-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  #about .about-container .about-content .about-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  #home .home-content {
+    line-height: 6rem;
+  }
+  #about .about-container {
+    padding: 2rem 2rem 2rem;
+  }
+  #about .about-container .about-content .about-text {
+    padding-left: 2rem;
+  }
+  #about .about-container .about-content .about-text h1 {
+    font-size: 2.2rem;
+  }
+  #about .about-container .about-content .about-text p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 460px) {
+  #about .about-container {
+    padding: 2rem 0.5rem 2rem;
   }
 }
 
@@ -360,7 +574,7 @@ html {
 body {
   width: 100%;
   background-color: #181818;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 body,
