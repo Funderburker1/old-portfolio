@@ -1,0 +1,57 @@
+h1, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/*botao de descer e subir a tela*/
+.arrow {
+  display: flex;
+  justify-content: flex-end;
+  
+  i {
+    color: $color-theme;
+    transition: 0.5s;
+  
+    &:hover {
+      color: $color-theme-dark;
+      transform: scale(1.5); 
+      transition: 0.5s;
+  
+    }
+  }
+}
+
+
+.link {
+  padding: 8px 24px;
+  font-size: 24px;
+  transition: .5s ease;
+
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 0%;
+    height: 2px;
+
+    transform: translate(20%, -50%);
+    transition: .5s ease;
+
+    background-color: $color-theme;
+  }
+
+  &:hover {
+    opacity: .7;
+
+    &::after {
+      width: 70%;
+     
+    }
+  }
+}

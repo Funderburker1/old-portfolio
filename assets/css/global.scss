@@ -1,0 +1,40 @@
+@import 'sass/colors';
+@import 'sass/typography';
+
+
+@import 'sass/home';
+@import 'sass/about';
+
+
+@import 'sass/mobile';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  outline: none;
+
+  a { color: inherit; } 
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  width: 100%;
+  background-color: $background-color-dark;
+  overflow-y: hidden;
+}
+
+body,
+button,
+input {
+  font-size: clamp(14px, 1.6rem, 2vw);
+  
+}

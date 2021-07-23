@@ -1,0 +1,144 @@
+/*---------------------------------navbar----------------------------*/
+#header {
+  position: fixed;
+
+  width: 100%;
+  height: 7rem;
+  padding: 1rem 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $background-color-light;
+
+  #logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color-theme;
+    letter-spacing: 0.1rem;
+  }
+  
+  a {
+    color: $color-theme;
+  }
+}
+
+#menu {
+  display: flex;
+  gap: 1rem;
+
+  & a {
+    display: block;
+    padding: 1rem;
+  }
+}
+
+/*------------------------------HOME--------------------------------*/
+#home { 
+  padding-top: 7rem;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    padding: 2rem;
+
+    & img {
+      width: 100%;
+    }
+    
+  }
+
+  .home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 100%;
+  
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+}
+
+#text {
+  width: 80%;
+
+  .text-1,
+  .text-2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  
+  }
+  
+  .text-3 {
+    color: $color-theme;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1.5rem;
+  }
+
+  // .button {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
+
+}
+ /* efeito maquina de escrever no h3 */
+#text h3::after {
+content: "|";
+opacity: 1;
+margin-left: 5px;
+display: inline-block;
+white-space: nowrap;
+animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*botão*/
+.botao-likedin {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 20rem;
+  background: $color-theme;
+  color: #fff;
+  
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 1s;
+  border: 3px solid $color-theme;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: $color-theme;
+    transition: 0.6s;
+  }
+  
+}
+
+
+/*----Hamburguer----*/
+#btn-mobile {
+  display: none;
+}
+
