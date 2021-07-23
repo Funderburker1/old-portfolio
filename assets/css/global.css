@@ -147,7 +147,7 @@ h1, h3, h4, h5, h6, p {
   width: 55%;
   height: 100%;
   font-size: 3.5rem;
-  line-height: 5rem;
+  line-height: 6rem;
 }
 
 #text {
@@ -308,8 +308,20 @@ h1, h3, h4, h5, h6, p {
 
 #about .about-container .about-content .about-text h1 {
   font-size: 4.2rem;
-  margin-bottom: 4rem;
   line-height: 5rem;
+}
+
+#about .about-container .about-content .about-text span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 2px solid #04D361;
+  margin-bottom: 4rem;
+  width: 20.4rem;
 }
 
 #about .about-container .about-content .about-text p {
@@ -520,6 +532,8 @@ h1, h3, h4, h5, h6, p {
   }
   #about .about-container .about-content .about-text h1 {
     font-size: 2.2rem;
+  }
+  #about .about-container .about-content .about-text span {
     margin-bottom: 2rem;
   }
   #about .about-container .about-content .about-text p {

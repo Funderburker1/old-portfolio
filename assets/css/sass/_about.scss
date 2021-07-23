@@ -40,11 +40,18 @@
 
         h1 {
           font-size: 4.2rem;
-          margin-bottom: 4rem;
+          
           // border-bottom: 4px solid $color-theme ;
           
           // width: 32%;
           line-height: 5rem;
+        }
+        span {
+          display: flex;
+          flex-direction: column;
+          border: 2px solid $color-theme;
+          margin-bottom: 4rem;
+          width: 20.4rem;
         }
 
         p {
