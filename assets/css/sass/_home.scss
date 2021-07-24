@@ -10,10 +10,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $background-color-light ;
+  background: $background-color-light;
+  
 
   #logo {
-    font-size: 2.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5rem;
     font-weight: bold;
     color: $color-theme;
     letter-spacing: 0.1rem;
