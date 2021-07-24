@@ -36,26 +36,23 @@
         width: 60%;
         padding-left: 4rem;
         
-        color: $color-primary;
+        color: $color-secundary;
 
         h1 {
           font-size: 4.2rem;
-          
-          // border-bottom: 4px solid $color-theme ;
-          
-          // width: 32%;
           line-height: 5rem;
+          color: $color-primary;
         }
         span {
           display: flex;
           flex-direction: column;
           border: 2px solid $color-theme;
-          margin-bottom: 4rem;
+          margin-bottom: 3rem;
           width: 20.4rem;
         }
 
         p {
-          margin-bottom: 4rem;
+          margin-bottom: 3.5rem;
           font-size: 1.6rem;
           line-height: 2.5rem;
         }
