@@ -5,6 +5,9 @@
 @import 'sass/home';
 @import 'sass/about';
 @import 'sass/services';
+@import 'sass/skills';
+@import 'sass/footer';
+
 
 
 @import 'sass/mobile';
@@ -39,7 +42,7 @@ body {
   width: 100%;
   background-color: $background-color-light;
   
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 body,

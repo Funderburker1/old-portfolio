@@ -3,6 +3,10 @@ h1, h3, h4, h5, h6, p {
   font-family: 'Roboto', sans-serif;
 }
 
+h1, h3 {
+  font-family: 'Baloo 2', sans-serif;
+}
+
 /*botao de descer e subir a tela*/
 .arrow {
   display: -webkit-box;
@@ -44,9 +48,7 @@ h1, h3, h4, h5, h6, p {
   top: 100%;
   left: 0;
   width: 0%;
-  height: 2px;
-  -webkit-transform: translate(20%, -50%);
-          transform: translate(20%, -50%);
+  height: 3px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #04D361;
@@ -57,7 +59,32 @@ h1, h3, h4, h5, h6, p {
 }
 
 .link:hover::after {
-  width: 70%;
+  width: 100%;
+}
+
+/*Titulos*/
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.titulo h1 {
+  font-size: 4.2rem;
+  line-height: 6rem;
+  color: #fff;
+  border-bottom: 3px solid #04D361;
+  margin-bottom: 5rem;
 }
 
 /*---------------------------------navbar----------------------------*/
@@ -244,10 +271,10 @@ h1, h3, h4, h5, h6, p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  width: 20rem;
+  width: 19rem;
   background: #04D361;
   color: #fff;
-  padding: .4rem;
+  padding: .1rem;
   font-size: 2.3rem;
   font-weight: 700;
   border-radius: 10px;
@@ -397,41 +424,6 @@ h1, h3, h4, h5, h6, p {
   padding: 13rem 8rem 2rem;
 }
 
-#services .services-titulo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#services .services-titulo h1 {
-  font-size: 4.2rem;
-  line-height: 5rem;
-  color: #fff;
-}
-
-#services .services-titulo span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 2px solid #04D361;
-  margin-bottom: 6rem;
-  width: 20.4rem;
-}
-
 #services .services-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,6 +484,171 @@ h1, h3, h4, h5, h6, p {
   color: #fff;
 }
 
+#skill {
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 8rem 2rem;
+}
+
+#skill #skills-container .skill-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+}
+
+#skill #skills-container .skill-content:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+#skill #skills-container .skill-content .conhecimento {
+  text-align: center;
+  width: 100%;
+  max-width: 25rem;
+  height: 20rem;
+  border-radius: 10px 10px 0px 0px;
+  padding: 1.5rem;
+  background-color: #181818;
+  border-bottom: 3px solid #fff;
+  color: #04D361;
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  position: relative;
+}
+
+#skill #skills-container .skill-content .conhecimento i {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#skill #skills-container .skill-content .conhecimento h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#skill #skills-container .skill-content .conhecimento p {
+  color: #dbdbdb;
+}
+
+#skill #skills-container .skill-content .conhecimento::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
+  background-color: #04D361;
+}
+
+#skill #skills-container .skill-content .conhecimento:hover {
+  cursor: pointer;
+}
+
+#skill #skills-container .skill-content .conhecimento:hover i {
+  color: #0efd7a;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#skill #skills-container .skill-content .conhecimento:hover::after {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background-color: #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-content p {
+  color: #a7a7a7;
+  font-size: 1.5rem;
+}
+
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.5rem;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 1rem;
+}
+
+.social-list a:hover {
+  color: #04D361;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.social-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 4rem;
+  height: 4rem;
+  background: #04D361;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border-radius: .5rem;
+  -webkit-transition: background-color .4s;
+  transition: background-color .4s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#link-topo:hover {
+  background-color: #058840;
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 /*-------Mobile--------*/
 @media (max-width: 1023px) {
   html {
@@ -518,7 +675,7 @@ h1, h3, h4, h5, h6, p {
     overflow: auto;
   }
   #menu a {
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 3rem 0;
     margin: 0 1.5rem;
     border-bottom: 0.2rem solid #202020;
@@ -593,6 +750,9 @@ h1, h3, h4, h5, h6, p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #about {
+    height: 70vh;
+  }
   #about .about-container {
     padding: 2rem 8rem 2rem;
   }
@@ -626,6 +786,7 @@ h1, h3, h4, h5, h6, p {
   }
   #services {
     padding: 2rem 8rem 2rem;
+    height: 180vh;
   }
   #services .services-cards {
     display: -webkit-box;
@@ -645,6 +806,9 @@ h1, h3, h4, h5, h6, p {
   #services .services-cards .arrow {
     display: none;
   }
+  #skill .arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -657,6 +821,24 @@ h1, h3, h4, h5, h6, p {
   #home .home-content .button .botao-likedin {
     width: 17rem;
     font-size: 2rem;
+  }
+  #services {
+    height: 170vh;
+  }
+  #skill {
+    height: 235vh;
+  }
+  #skill .skill-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #link-topo {
+    right: .7rem;
+  }
+  footer .footer-content p {
+    font-size: 1rem;
   }
 }
 
@@ -690,7 +872,7 @@ h1, h3, h4, h5, h6, p {
     line-height: 3.5rem;
   }
   #about {
-    height: 85vh;
+    height: 70vh;
   }
   #about .about-container {
     padding: 2rem 0.5rem 2rem;
@@ -699,10 +881,16 @@ h1, h3, h4, h5, h6, p {
     padding-left: 2rem;
   }
   #about .about-container .about-content .about-text h1 {
-    font-size: 2.2rem;
+    font-size: 2.7rem;
   }
   #about .about-container .about-content .about-text p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+  }
+  #skill #skills-container .skill-content .conhecimento {
+    width: 80%;
+  }
+  #skill #skills-container .skill-content .conhecimento i {
+    font-size: 4rem;
   }
 }
 
@@ -738,7 +926,6 @@ html ::-webkit-scrollbar-thumb {
 body {
   width: 100%;
   background-color: #202020;
-  overflow: hidden;
 }
 
 body,

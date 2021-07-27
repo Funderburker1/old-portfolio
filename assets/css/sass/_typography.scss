@@ -1,7 +1,13 @@
 h1, h3, h4, h5, h6, p {
   font-family: 'Roboto', sans-serif;
   
+  
 }
+
+h1, h3 {
+font-family: 'Baloo 2', sans-serif;
+}
+
 
 /*botao de descer e subir a tela*/
 .arrow {
@@ -40,9 +46,9 @@ h1, h3, h4, h5, h6, p {
     left: 0;
 
     width: 0%;
-    height: 2px;
+    height: 3px;
 
-    transform: translate(20%, -50%);
+    // transform: translate(20%, -50%);
     transition: .5s ease;
 
     background-color: $color-theme;
@@ -52,8 +58,25 @@ h1, h3, h4, h5, h6, p {
     opacity: .7;
 
     &::after {
-      width: 70%;
+      width: 100%;
      
     }
   }
+}
+
+/*Titulos*/
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4.2rem;
+    line-height: 6rem;
+    color: $color-primary;
+    border-bottom: 3px solid $color-theme;
+    margin-bottom: 5rem;
+  }
+
 }
