@@ -489,7 +489,7 @@ h1, h3 {
 #skill {
   width: 100%;
   height: 100vh;
-  padding: 5rem 8rem 2rem;
+  padding: 6rem 8rem 2rem;
 }
 
 #skill #skills-container .skill-content {
@@ -569,18 +569,17 @@ h1, h3 {
 }
 
 footer {
-  width: 100%;
-  height: 7rem;
-  background-color: #181818;
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  border-bottom: 3px solid #04D361;
 }
 
 .footer-content {
@@ -591,6 +590,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-content p {
@@ -688,8 +690,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 28rem;
-  height: 30rem;
+  width: 27rem;
+  height: 29rem;
   border-radius: 10px 10px 0 0;
   background-color: #181818;
   border-bottom: 3px solid #04D361;
@@ -732,12 +734,113 @@ footer {
   margin-bottom: 1rem;
 }
 
-#projects .projects-content .carousel .carousel-item:hover {
-  background-color: #202020;
+#projects .projects-content .carousel .carousel-item .pj-icon i {
+  font-size: 6rem;
+  color: #04D361;
+}
+
+#projects .projects-content .carousel .carousel-item:hover i {
+  color: #04D361;
+}
+
+#projects .projects-content .carousel .carousel-item:hover .pj-icon i {
+  color: #fff;
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 8rem 0;
+}
+
+#contact .contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+#contact .contact-content p {
+  color: #fff;
+}
+
+#contact .contact-content .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 37rem;
+  height: 32rem;
+  background-color: #181818;
+  border-radius: 10px;
+}
+
+#contact .contact-content .contact-box .contact-box-content {
+  margin: 2rem;
+}
+
+#contact .contact-content .contact-box .contact-box-content span {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #dbdbdb;
+}
+
+#contact .contact-content .contact-box .contact-box-content span i {
+  background-color: #067538;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 4rem;
+  color: #04D361;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#contact .contact-content .contact-box .contact-box-content span i:hover {
+  cursor: pointer;
+  color: #fff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#contact .contact-content .contact-box .contact-box-content span p {
+  padding-left: 1rem;
 }
 
 /*-------Mobile--------*/
-@media (max-width: 1023px) {
+@media (max-width: 1025px) {
   html {
     overflow: auto;
   }
@@ -896,6 +999,12 @@ footer {
   #skill .arrow {
     display: none;
   }
+  #projects {
+    padding: 6rem 4rem 2rem;
+  }
+  #projects .arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -945,12 +1054,9 @@ footer {
   #about .about-container .about-content .about-text p {
     font-size: 1.1rem;
   }
-  #projects .arrow {
-    display: none;
-  }
   #projects .projects-content .carousel .carousel-item {
     width: 20rem;
-    height: 22rem;
+    height: 23rem;
   }
 }
 
@@ -987,8 +1093,8 @@ footer {
     font-size: 4rem;
   }
   #projects .projects-content .carousel .carousel-item {
-    width: 15rem;
-    height: 20rem;
+    width: 20rem;
+    height: 23rem;
   }
   #projects .projects-content .carousel .carousel-item h3 {
     font-size: 1.5rem;
@@ -1005,6 +1111,16 @@ footer {
   #projects .projects-content .carousel .carousel-item .pj-site {
     font-size: 1rem;
     margin-bottom: .5rem;
+  }
+  #contact .contact-content .contact-box {
+    width: 30rem;
+    height: 30rem;
+  }
+  #contact .contact-content .contact-box .contact-box-content span i {
+    font-size: 3rem;
+  }
+  footer .footer-content p {
+    display: none;
   }
 }
 
@@ -1024,6 +1140,7 @@ footer {
 }
 
 html {
+  height: 100%;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -1039,6 +1156,7 @@ html ::-webkit-scrollbar-thumb {
 
 body {
   width: 100%;
+  position: relative;
   background-color: #202020;
   overflow: hidden;
 }

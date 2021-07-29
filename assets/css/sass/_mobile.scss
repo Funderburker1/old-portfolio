@@ -1,5 +1,5 @@
 /*-------Mobile--------*/
-@media (max-width: 1023px) {
+@media (max-width: 1025px) {
    html {
       overflow: auto;
    }
@@ -90,6 +90,7 @@
    .arrow-home {
       display: none;
    }
+   
 }
 
 .text {
@@ -163,6 +164,13 @@
          display: none;
       }
    }
+
+   #projects {
+      padding: 6rem 4rem 2rem;
+      .arrow {
+         display: none;
+      }
+   }
 }
 
 @media (max-width: 768px) {
@@ -224,16 +232,13 @@
          font-size:1.1rem ;
       }
    }
-   #projects {
-      .arrow {
-         display: none;
-      }
-   }
+  
    #projects .projects-content .carousel .carousel-item {
             width: 20rem;
-            height: 22rem;
+            height: 23rem;
  
    }
+
 }
 
 @media (max-width: 460px) {
@@ -279,8 +284,8 @@
    }
 
    #projects .projects-content .carousel .carousel-item {
-      width: 15rem;
-      height: 20rem;
+      width: 20rem;
+      height: 23rem;
 
       h3 {
          font-size: 1.5rem;
@@ -303,7 +308,29 @@
           
        }
 
-}
+   }
+
+   #contact {
+      .contact-content {
+         .contact-box {
+            width: 30rem;
+            height: 30rem;
+            .contact-box-content {
+               span {
+                  i {
+                    font-size: 3rem;
+                  }
+              }
+            }
+         }
+      }
+   }
+
+   footer {
+      .footer-content p {
+         display: none;
+      }
+   }
 }
 
 
