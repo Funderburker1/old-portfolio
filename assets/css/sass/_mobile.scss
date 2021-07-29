@@ -224,6 +224,16 @@
          font-size:1.1rem ;
       }
    }
+   #projects {
+      .arrow {
+         display: none;
+      }
+   }
+   #projects .projects-content .carousel .carousel-item {
+            width: 20rem;
+            height: 22rem;
+ 
+   }
 }
 
 @media (max-width: 460px) {
@@ -267,6 +277,33 @@
    #skill #skills-container .skill-content .conhecimento i {
       font-size: 4rem;
    }
+
+   #projects .projects-content .carousel .carousel-item {
+      width: 15rem;
+      height: 20rem;
+
+      h3 {
+         font-size: 1.5rem;
+      }
+
+      p {
+         font-size: 1rem;
+      }
+
+      span {
+         font-size: 1.5rem;
+
+         i {
+           padding: .5rem;
+         }
+      }
+      .pj-site {
+         font-size: 1rem;
+         margin-bottom: .5rem;
+          
+       }
+
+}
 }
 
 

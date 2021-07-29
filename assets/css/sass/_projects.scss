@@ -1,0 +1,71 @@
+#projects {
+  width: 100%;
+  height: 100vh;
+  padding: 8rem 8rem 2rem;
+  // margin: auto;
+  // position: relative;
+  
+  .projects-content  {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    .carousel {
+      width: 100rem;
+      height: 35rem;
+      // background-color: aqua;
+      .carousel-item {
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 28rem;
+        height: 30rem;
+        border-radius: 10px 10px 0 0;
+        background-color: $background-color-dark;
+        border-bottom: 3px solid $color-theme;
+        img {
+          border-radius: 10px 10px 0 0  ;
+          width: 100%;
+          height: 50%;
+          
+        }
+        h3 {
+          text-align: center;
+          margin: .5rem 0;
+          font-size: 2rem;
+          color: $color-theme;
+        }
+        p{
+          text-align: center;
+          color: $color-primary;
+          // border-bottom: 2px solid $color-theme;
+          // line-height: 2.8rem;
+        }
+
+        span {
+          font-size: 2rem;
+          align-items: center;
+          color: $color-secundary;
+          i {
+            padding: 1rem;
+          }
+        }
+
+        .pj-site {
+          display: inline-block;
+          font-size: 1.5rem;
+          border-bottom: 2px solid $color-theme;
+          margin-bottom: 1rem;
+           
+        }
+
+        &:hover {
+          background-color: $background-color-light;
+        }
+      }
+    }
+  }
+  
+}
+
+

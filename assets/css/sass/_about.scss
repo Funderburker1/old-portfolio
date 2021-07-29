@@ -4,7 +4,7 @@
 
   
   .about-container {
-    padding: 15rem 8rem 2rem;
+    padding: 14rem 8rem 2rem;
     height: 100%;
 
     .about-content {
@@ -40,16 +40,12 @@
         color: $color-secundary;
 
         h1 {
+          display: inline-block;
           font-size: 4.2rem;
-          line-height: 5rem;
+          line-height: 6rem;
           color: $color-primary;
-        }
-        span {
-          display: flex;
-          flex-direction: column;
-          border: 2px solid $color-theme;
+          border-bottom: 3px solid $color-theme;
           margin-bottom: 3rem;
-          width: 20.4rem;
         }
 
         p {

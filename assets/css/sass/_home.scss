@@ -10,8 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: $background-color-light;
-  
+  background: $background-color-light;  
 
   #logo {
     display: flex;
@@ -19,12 +18,18 @@
     align-items: center;
 
     font-size: 2.5rem;
-    font-weight: bold;
-    color: $color-theme;
+    font-weight: 700;
+    color: $color-primary;
+    
     letter-spacing: 0.1rem;
+    
+    span {
+      color: $color-theme;
+      
+    }
   }
-  
-  a {
+ 
+  .link {
     color: $color-theme;
     font-size: 2rem;
   }
@@ -87,11 +92,14 @@
 
   .text-2 {
     font-size: 7rem;
+    margin-top: 0 ;
+    margin-bottom: 0;
   }
   
   .text-3 {
     color: $color-theme;
     font-family: "Roboto", sans-serif;
+    margin-top: .4rem ;
     margin-bottom: 1.5rem;
     font-size: 3.5rem;
   }
