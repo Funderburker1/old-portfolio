@@ -310,7 +310,16 @@ h1, h3 {
 }
 
 #about .about-container {
-  padding: 14rem 8rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14rem 8rem 8rem;
   height: 100%;
 }
 
@@ -419,7 +428,16 @@ h1, h3 {
 #services {
   width: 100%;
   height: 100vh;
-  padding: 8rem 8rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14rem 8rem 8rem;
 }
 
 #services .services-cards {
@@ -489,7 +507,20 @@ h1, h3 {
 #skill {
   width: 100%;
   height: 100vh;
-  padding: 6rem 8rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14rem 8rem 8rem;
 }
 
 #skill #skills-container .skill-content {
@@ -657,7 +688,20 @@ footer {
 #projects {
   width: 100%;
   height: 100vh;
-  padding: 8rem 8rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 14rem 8rem 8rem;
 }
 
 #projects .projects-content {
@@ -760,7 +804,12 @@ footer {
           flex-direction: column;
   width: 100%;
   height: 100vh;
-  padding: 8rem 8rem 0;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  padding: 14rem 8rem 14rem;
 }
 
 #contact .contact-content {

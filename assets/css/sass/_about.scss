@@ -4,7 +4,10 @@
 
   
   .about-container {
-    padding: 14rem 8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14rem 8rem 8rem;
     height: 100%;
 
     .about-content {
